@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 06</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        section>div:nth-child(1){
+            width: 200vw;
+            height: 50vh;
+            background-image: url("assets/images/sky.jpg");
+            /*background-repeat: no-repeat;*/
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        section>div:nth-child(2){
+            width: 200vw;
+            height: 50vh;
+            background-image: url("assets/images/city.png");
+            /*background-repeat: no-repeat;*/
+            background-size: cover;
+            position: absolute;
+        }
+        section>div:nth-child(3){
+            width: 200vw;
+            height: 50vh;
+            background-image: url("assets/images/road.jpg");
+            /*background-repeat: no-repeat;*/
+
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section>div:nth-child(4){
+            width: 400px;
+            height: 200px;
+            background-image: url("assets/images/car.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        section>div:nth-child(5){
+            width: 150px;
+            height: 75px;
+            background-image: url("assets/images/wheel.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 83px;
+            right: 257px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            animation-name: tireAnimation;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+        }
+        section>div:nth-child(6){
+            width: 150px;
+            height: 75px;
+            background-image: url("assets/images/wheel.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 83px;
+            right: 0;
+            bottom: 0;
+            left: 232px;
+            margin: auto;
+            animation-name: tireAnimation;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+        @keyframes tireAnimation {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes roadAnimation {
+            from{
+                margin-left: 0;
+            }
+            to{
+
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
