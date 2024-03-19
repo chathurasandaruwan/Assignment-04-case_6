@@ -15,18 +15,20 @@
             width: 200vw;
             height: 50vh;
             background-image: url("assets/images/sky.jpg");
-            /*background-repeat: no-repeat;*/
             background-size: cover;
             background-position: center;
             position: absolute;
+            margin: auto;
         }
         section>div:nth-child(2){
             width: 200vw;
             height: 50vh;
             background-image: url("assets/images/city.png");
             /*background-repeat: no-repeat;*/
-            background-size: cover;
+            background-size: contain;
+            background-position: bottom;
             position: absolute;
+            margin: auto;
         }
         section>div:nth-child(3){
             width: 200vw;
@@ -38,6 +40,12 @@
             position: absolute;
             bottom: 0;
             margin: auto;
+            /*margin-left: 0;*/
+
+            animation-name: roadAnimation;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
         }
 
         section>div:nth-child(4){
@@ -103,7 +111,7 @@
                 margin-left: 0;
             }
             to{
-
+                margin-left: -1920px;
             }
         }
     </style>
